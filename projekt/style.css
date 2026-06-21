@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+header {
+    background-color: #0b1f3a;
+    color: #ffffff;
+    padding: 20px 0 0 0;
+}
+
+.logo-container {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.logo-container a {
+    font-size: 2.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+}
+
+.logo-container .logo-accent {
+    color: #e8731c;
+}
+
+nav.main_nav {
+    background-color: #0b1f3a;
+    border-top: 1px solid #1c3357;
+}
+
+nav.main_nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+nav.main_nav ul li a {
+    display: block;
+    padding: 14px 5px;
+    font-family: 'Arial', sans-serif;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+    border-bottom: 3px solid transparent;
+    transition: border-color 0.2s;
+}
+
+nav.main_nav ul li a:hover,
+nav.main_nav ul li a.active {
+    border-bottom: 3px solid #e8731c;
+}
+
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+section.kategorija {
+    margin-bottom: 50px;
+}
+
+h2.section-title {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #0b1f3a;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+h2.section-title::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background: repeating-linear-gradient(45deg, #1c3357 0 2px, transparent 2px 4px);
+}
+
+.articles-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+article.clanak-kratki {
+    display: flex;
+    flex-direction: column;
+}
+
+article.clanak-kratki .thumb {
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+    margin-bottom: 12px;
+    background-color: #ddd;
+}
+
+article.clanak-kratki .thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+article.clanak-kratki .kategorija-label {
+    font-family: 'Arial', sans-serif;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #1859b5;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+article.clanak-kratki h3 {
+    font-size: 1.05rem;
+    line-height: 1.3;
+    margin-bottom: 8px;
+}
+
+article.clanak-kratki h3 a:hover {
+    text-decoration: underline;
+}
+
+article.clanak-kratki .meta {
+    font-family: 'Arial', sans-serif;
+    font-size: 0.75rem;
+    color: #777;
+    text-transform: uppercase;
+    margin-top: auto;
+}
+
+hr.divider {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin-top: 30px;
+}
+
+
+.clanak-header {
+    max-width: 800px;
+    margin: 40px auto 0;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.clanak-header .category {
+    font-family: 'Arial', sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #1859b5;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.clanak-header .category span {
+    color: #1859b5;
+}
+
+.clanak-header h1.title {
+    font-size: 2.3rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+}
+
+.clanak-header p.about,
+.clanak-header .about i {
+    font-size: 1.2rem;
+    color: #444;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.clanak-header .autor-info {
+    font-family: 'Arial', sans-serif;
+    font-size: 0.75rem;
+    color: #999;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.clanak-slika {
+    max-width: 1000px;
+    margin: 0 auto 30px;
+    padding: 0 20px;
+}
+
+.clanak-sadrzaj {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px 50px;
+    font-size: 1.1rem;
+}
+
+.clanak-sadrzaj p {
+    margin-bottom: 20px;
+}
+
+
+footer {
+    background-color: #0b1f3a;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 40px;
+    font-family: 'Arial', sans-serif;
+    font-size: 0.8rem;
+}
+
+footer p {
+    margin: 3px 0;
+    opacity: 0.85;
+}
+
+
+.form-wrapper {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #f7f8fa;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+}
+
+.form-wrapper h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5rem;
+    color: #0b1f3a;
+    margin-bottom: 25px;
+}
+
+.form-item {
+    margin-bottom: 18px;
+}
+
+.form-item label {
+    display: block;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #0b1f3a;
+    margin-bottom: 6px;
+}
+
+.form-field-textual,
+.input-text,
+select.form-field-textual,
+textarea.form-field-textual {
+    width: 100%;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 0.95rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea.form-field-textual {
+    resize: vertical;
+}
+
+.form-item input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.form-item button,
+button[type="submit"],
+button[type="reset"] {
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 10px 22px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button[type="submit"] {
+    background-color: #1859b5;
+    color: #fff;
+}
+
+button[type="submit"]:hover {
+    background-color: #0b1f3a;
+}
+
+button[type="reset"] {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+button[name="delete"] {
+    background-color: #c0392b;
+    color: #fff;
+}
+
+.thumb-preview {
+    margin-top: 8px;
+    border-radius: 4px;
+}
+
+.bojaPoruke {
+    color: #c0392b;
+    font-family: Arial, sans-serif;
+    font-size: 0.85rem;
+}
+
+.poruka-uspjeh {
+    color: #1d7a3c;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.admin-block {
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 25px;
+    margin-bottom: 25px;
+    background: #fbfbfc;
+}
+
+
+@media (max-width: 992px) {
+    .articles-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .articles-row {
+        grid-template-columns: 1fr;
+    }
+
+    nav.main_nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .clanak-header h1.title {
+        font-size: 1.6rem;
+    }
+
+    .logo-container a {
+        font-size: 1.6rem;
+    }
+}
